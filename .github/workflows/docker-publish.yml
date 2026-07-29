@@ -37,8 +37,3 @@ jobs:
           tags: |
             ghcr.io/rafalurade-lab/skills-publish-docker-images/stackoverflown:main
             ghcr.io/rafalurade-lab/skills-publish-docker-images/stackoverflown:${{ github.sha }}
-
-      - name: Build and push local Docker image
-        run: |
-          docker build . --tag ghcr.io/rafalurade-lab/skills-publish-docker-images/stackoverflown:main
-          docker push ghcr.io/rafalurade-lab/skills-publish-docker-images/stackoverflown:main
